@@ -1,0 +1,41 @@
+1. Project setup:
+===> in terminal:
+create a folder name backend-jcorner
+cd backend-jcorner
+npm i express mongoose dotenv bcryptjs jsonwebtoken nodemon mongodb cors
+
+express - framework for web application and api
+mongoose - database connection
+dotenv - help read env variables 
+bcryptjs - for password hashing
+jsonwebtoken - for authentication
+*mongodb - 
+cors - used to allow cross domain request
+
+2. Folder structure 
+-auth 
+    =auth.js
+-controllers
+    =controller.js
+-models
+    =Model.js
+-routes
+    =route.js
+index.js (main)
+-node_modules
+.env
+    add db related info 
+.gitignore
+    * add .env and node_modules here
+
+3. Setup mongodb - get mongodb string 
+add it to the .env and create a secret key
+i.e. inside .env
+--------------------------------------------------------------
+PORT=4000
+MONGODB_STRING="mongodb+srv://admin:admin123@wdc028-course-booking.n3exn.mongodb.net/e-commerce-API?retryWrites=true&w=majority"
+JWT_SECRET_KEY="ECommerceAPI"
+--------------------------------------------------------------
+
+
+npm install cloudinary multer multer-storage-cloudinary
