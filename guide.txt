@@ -32,9 +32,9 @@ index.js (main)
 add it to the .env and create a secret key
 i.e. inside .env
 --------------------------------------------------------------
-PORT=4000
-MONGODB_STRING="mongodb+srv://admin:admin123@wdc028-course-booking.n3exn.mongodb.net/e-commerce-API?retryWrites=true&w=majority"
-JWT_SECRET_KEY="ECommerceAPI"
+PORT=
+MONGODB_STRING=""
+JWT_SECRET_KEY=""
 --------------------------------------------------------------
 
 
