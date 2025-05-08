@@ -20,9 +20,9 @@ app.use(express.json());
 
 
 const corsOptions = {
-    origin: ['http://localhost:8000','http://localhost:3000', 'http://localhost:4000', 'https://jcorner.onrender.com'], 
-    credentials: true, 
-    optionsSuccessStatus: 200 
+    origin: ['http://localhost:5173', 'http://localhost:8000', 'http://localhost:3000', 'http://localhost:4000', 'https://jcorner.onrender.com'],
+    credentials: true,
+    optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
