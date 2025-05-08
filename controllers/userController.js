@@ -51,7 +51,7 @@ module.exports.loginUser = (req, res) => {
             } else {
                 const isPasswordCorrect = bcrypt.compareSync(req.body.password, result.password);
                 if (isPasswordCorrect) {
-                    return res.status(200).send({ access : auth.createAccessToken(result)});
+                    return res.status(200).send({ email: req.body.email, token : auth.createAccessToken(result)});
                 } else {
                     return res.status(401).send({message: 'Email and password do not match'});
                 }
